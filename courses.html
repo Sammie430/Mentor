@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Courses - Mentor Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mentor
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    section {
+    padding-top: 20px;  /* Adjust the padding as needed */
+    padding-bottom: 10px; /* Adjust the padding as needed */
+    margin-bottom: 20px;  /* Adjust the margin as needed */
+}
+
+section h2 {
+    margin-top: 0;  /* Ensures the heading does not add extra top margin */
+}
+
+  </style>
+</head>
+
+<body class="courses-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt=""> 
+      
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html" class="active">Courses</a></li>
+
+          <li><a href="events.html">Events</a></li>
+  
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="contact.html">Level Up Career!</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-">
+            <div class="col-lg-8">
+              <h1>Courses:</h1>
+              <p class="mb-0">Our courses are meticulously designed to provide comprehensive knowledge and hands-on experience in the latest industry practices.
+                Each course includes:</p>
+                <br>
+                <ul>
+                <li><i class="bi bi-check-circle"></i> <span>In-Depth Curriculum: Structured to cover all essential topics and advanced concepts.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Practical Learning: Real-world projects and case studies to apply your skills.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Flexible Schedule: Options for online and in-person classes to suit your availability.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Career Support: Guidance on resume building, interview preparation, and job placements.</span></li>
+                </ul>
+                <br>               
+                Join us to gain the skills and confidence needed to excel in your chosen field!
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Courses</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+
+  <!-- Course Categories Section -->
+<section id="courses" class="courses section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Course Categories</h2>
+    <p>Explore our diverse range of courses</p>
+  </div><!-- End Section Title -->
+
+  <!-- Search and Filter -->
+  <div class="container search-filter" data-aos="fade-up" data-aos-delay="100">
+    <input type="text" id="search-input" placeholder="Search for courses..." onkeyup="filterCourses()">
+    <select id="category-filter" onchange="filterCourses()">
+      <option value="all">All Categories</option>
+      <option value="IT-Technical-training">IT Technical Training</option>
+      <option value="human-resources">Human Resources</option>
+      <option value="non-it-sectors">Training & Other Non-IT Sectors</option>
+      <option value="soft-skills">Soft Skills Training</option>
+      <option value="finance">Finance</option>
+      <option value="industry-specific">Industry-Specific Training</option>
+    </select>
+  </div><!-- End Search and Filter -->
+
+  <section id="it-technical-training">
+  <div class="container" data-aos="fade-up" data-aos-delay="100" id="course-list">
+    <div class="course-category" data-category="IT-Technical-training">
+      <h3>IT Technical Training</h3>
+      <ul>
+        <li>Java</li>
+        <li>Advanced Java</li>
+        <li>Artificial Intelligence & ML</li>
+        <li>RDBMS: MySQL</li>
+        <li>Python (Basics and Advanced)</li>
+        <li>Python Standard Libraries: NumPy, Pandas, Matplotlib, Seaborn</li>
+        <li>Robotics</li>
+        <li>Front-end Development: HTML5, CSS3, JavaScript</li> 
+      </ul>
+      <a href="IT-details.html" class="btn btn-primary">View Courses</a>
+      <a href="contact.html" class="btn btn-secondary">Book Online Counselling Session</a>
+    </div><!-- End Computer Industry -->
+
+    <section id="human-resources">
+    <div class="course-category" data-category="human-resources">
+      <h3>Human Resources</h3>
+      <ul>
+        <li>HR Generalist</li>
+        <li>HR Analytics</li>
+        <li>HR Payroll and Statutory Training with Advance Excel</li>
+        <li>Training on Recruitment</li>
+        <li>HCM ERP</li>
+      </ul>
+      <a href="HR-Details.html" class="btn btn-primary">View Courses</a>
+      <a href="contact.html" class="btn btn-secondary">Book Online Counselling Session</a>
+    </div><!-- End Human Resources -->
+
+    <section id="non-it-training">
+    <div class="course-category" data-category="non-it-sectors">
+      <h3>Training in Other Non-IT Sectors</h3>
+      <ul>
+        <li>Advance Accounts</li>
+        <li>Advance Excel</li>
+        <li>Tally Prime</li>
+        <li>Finance</li>
+      </ul>
+      <a href="NONIT-Details.html" class="btn btn-primary">View Courses</a>
+      <a href="contact.html" class="btn btn-secondary">Book Online Counselling Session</a>
+    </div><!-- End Training & Other Non-IT Sectors -->
+
+    <section id="soft-skills-training">
+    <div class="course-category" data-category="soft-skills">
+      <h3>Soft Skills Training</h3>
+      <ul>
+        <li>Effective Communication</li>
+        <li>Corporate Etiquettes</li>
+        <li>Behavioral Training</li>
+        <li>Neuro Scientific Transformation Programs</li>
+        <li>Personal Effectiveness</li>
+      </ul>
+      <a href="Soft-details.html" class="btn btn-primary">View Courses</a>
+      <a href="contact.html" class="btn btn-secondary">Book Online Counselling Session</a>
+    </div><!-- End Soft Skills Training -->
+
+    <section id="finance">
+    <div class="course-category" data-category="finance">
+      <h3>Finance</h3>
+      <ul>
+        <li>Investment Banking</li>
+        <li>Calculation of Bond</li>
+        <li>Understanding of Sophisticated Products (MBS, ABS)</li>
+        <li>Ethics and Trust in the Investment Profession</li>
+        <li>Alternative Investments Overview</li>
+        <li>Conflicts of Interest Mutual Fund</li>
+        <li>Calculation of Mutual Fund</li>
+        <li>Understanding on Subscription</li>
+        <li>Redemption Corporate Actions And Its Types</li>
+        <li>Types of Corporate Actions</li>
+        <li>Understanding Important Corporate Actions (e.g., Stock Split, Bonus Issue)</li>
+        <li>Trade Life Cycle</li>
+        <li>Hedge Fund</li>
+      </ul>
+      <a href="Finance-details.html" class="btn btn-primary">View Courses</a>
+      <a href="contact.html" class="btn btn-secondary">Book Online Counselling Session</a>
+    </div><!-- End Finance -->
+
+    <section id="industry-specific-training">
+    <div class="course-category" data-category="industry-specific">
+      <h3>Industry-Specific Training</h3>
+      <ul>
+        <li>Airline Industry</li>
+        <li>Banking Industry</li>
+        <li>Construction Industry</li>
+        <li>Communications Industry</li>
+        <li>Electrical Industry</li>
+        <li>Electronics Industry</li>
+        <li>Mechanical Industry</li>
+        <li>Automobile Industry</li>
+        <li>Healthcare Industry</li>
+        <li>Nursing Profession</li>
+        <li>Education Field</li>
+      </ul>
+      <a href="Indus-details.html" class="btn btn-primary">View Courses</a>
+      <a href="contact.html" class="btn btn-secondary">Book Online Counselling Session</a>
+    </div><!-- End Industry-Specific Training -->
+  </div>
+</section><!-- /Course Categories Section -->
+
+
+  </main>
+
+
+
+
+
+
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Train2Pro </span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>No. 4, SA Plaza, First Floor,</p>
+            <p>4th Cross, SR Lane, New BEL Road,</p>
+            <p>Near Union Bank of India, RMV 2nd Stage,</p>
+            <p>Bangalore – 560094</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91-8553673397 / +91-8088193060 / 080-42086754</span></p>
+            <p><strong>Email:</strong> <span>info@train2pro.in</span></p>
+          </div>
+
+          
+
+
+
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/rajeshtrain2pro"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/p/Train2pro-100083417385680/?_rdr"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/train2pro7156/?utm_source=ig_web_button_share_sheet"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/rajesh-corporate-trainer-for-human-resource-38023958/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/8553673397"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+              <li><a href="courses.html#it-technical-training">IT Technical Training</a></li>
+              <li><a href="courses.html#soft-skills-training">Soft Skills Training</a></li>
+              <li><a href="courses.html#human-resources">Human Resources</a></li>
+              <li><a href="courses.html#finance">Finance</a></li>
+              <li><a href="courses.html#industry-specific-training">Industry Specific Training</a></li>
+              <li><a href="courses.html#non-it-training">Training in Other Non-IT Sectors</a></li>
+          </ul>
+      </div>
+      
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Book a Free Career-Counselling Session Now!</h4>
+          <a class="btn-getstarted" href="courses.html">ClicK HERE!</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Train2Pro</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+  
+</body>
+
+</html>
